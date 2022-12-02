@@ -28,7 +28,7 @@ p {
 a {
 	color: $c-anchor;
 	// アンカーのデフォルトホバー処理
-	transition: all 0.5s ease-out;
+	// transition: all 0.3s ease-out;
 	&:visited {
 		color: $c-anchor-visited;
 	}
@@ -37,7 +37,7 @@ a {
 	}
 	&:hover {
 		color: $c-anchor-hover;
-		opacity: 0.6;
+		opacity: 1;
 	}
 	&:active {
 		color: $c-anchor-active;

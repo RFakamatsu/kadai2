@@ -38,40 +38,202 @@ block vars
 
 //- _layout.pugのcontentsを再定義
 block contents
-	main
-		//- article:独立した記事
-		article
-			h1 h1
-			section
-				h2 h2
-				h3 h3
-				h4 h4
-				h5 h5
-				h6 h6
-		//- 記事一覧
-		.article-list
-			ul
-				li
-					span.arrow.-up
-				li
-					span.arrow.-right
-				li
-					span.arrow.-down
-				li
-					span.arrow.-left
-				li
-					span.arrow.-openup
-				li
-					span.arrow.-openright
-				li
-					span.arrow.-opendown
-				li
-					span.arrow.-openleft
-		//- aside:コンテンツに関連しつつ、切り離し可能なセクション
-		aside
-			p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-				br
-				| テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-			p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-				br
-				| テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+	main.main-container
+		.mainvisual
+		img(src="/common/img/hero_sp.jpg", alt="").-sp
+		
+		//- トップニュース
+		section.topic-news
+			h2.tittle-container News
+				span.small ニュース
+			.tab
+				input(type="radio" name="tab-item" checked)#all
+				label(for="all").tab-item.-tab1 すべて
+				input(type="radio" name="tab-item")#company
+				label(for="company").tab-item.-tab2 CARTA HOLDINGS
+				input(type="radio" name="tab-item")#group
+				label(for="group").tab-item.-tab3 グループ企業
+				
+				select(name="menu").sp
+					option(value="choice") 選択してください
+					option(value="all") すべて
+					option(value="crataholdings") CARTA HOLDINGS
+					option(value="group") グループ企業
+					
+				.tab-content#all-content
+					ul
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") ポイントサイト「ECナビ」のスマイルプロジェクト、5つのチャリティ団体へ総額500万円を寄付～子どもたちへの教育支援や、突発的な災害支援を通じて日本を笑顔に～
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") ふるさと本舗、「Amazon Pay」の追加を記念にキャンペーンを開催！～合計1万円以上寄付し、Amazon Payによる決済をした方を対象に、最大で寄付金額の9%分を還元！～
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") ふるさと本舗、寄付金の支払い方法に「Amazon Pay」を10月より追加 ～多様な寄付方法で、ふるさと納税を身近に体験～
+						li 
+							.leftbox
+								span.date 2022年11月01日
+								span.guide プレスリリース 
+							a(href="#") 特産品ポータルサイト「ふるさと本舗」、10月度の新しい自治体情報を掲載
+						li 
+							.leftbox
+								span.date 2022年11月01日
+								span.guide プレスリリース 
+							a(href="#") CCI、大丸松坂屋百貨店と提携してTikTokクリエイターによる運用コンサルティングサービス「お菓子食べすぎ会社員　TikTokコンサルサービス」を提供開始
+				.tab-content#company-content
+					ul
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") 「2」ポイントサイト「ECナビ」のスマイルプロジェクト、5つのチャリティ団体へ総額500万円を寄付～子どもたちへの教育支援や、突発的な災害支援を通じて日本を笑顔に～
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") ふるさと本舗、「Amazon Pay」の追加を記念にキャンペーンを開催！～合計1万円以上寄付し、Amazon Payによる決済をした方を対象に、最大で寄付金額の9%分を還元！～
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") ふるさと本舗、寄付金の支払い方法に「Amazon Pay」を10月より追加 ～多様な寄付方法で、ふるさと納税を身近に体験～
+						li 
+							.leftbox
+								span.date 2022年11月01日
+								span.guide プレスリリース 
+							a(href="#") 特産品ポータルサイト「ふるさと本舗」、10月度の新しい自治体情報を掲載
+						li 
+							.leftbox
+								span.date 2022年11月01日
+								span.guide プレスリリース 
+							a(href="#") CCI、大丸松坂屋百貨店と提携してTikTokクリエイターによる運用コンサルティングサービス「お菓子食べすぎ会社員　TikTokコンサルサービス」を提供開始
+				.tab-content#group-content
+					ul
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") 「3」ポイントサイト「ECナビ」のスマイルプロジェクト、5つのチャリティ団体へ総額500万円を寄付～子どもたちへの教育支援や、突発的な災害支援を通じて日本を笑顔に～
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") ふるさと本舗、「Amazon Pay」の追加を記念にキャンペーンを開催！～合計1万円以上寄付し、Amazon Payによる決済をした方を対象に、最大で寄付金額の9%分を還元！～
+						li 
+							.leftbox
+								span.date 2022年11月02日
+								span.guide プレスリリース 
+							a(href="#") ふるさと本舗、寄付金の支払い方法に「Amazon Pay」を10月より追加 ～多様な寄付方法で、ふるさと納税を身近に体験～
+						li 
+							.leftbox
+								span.date 2022年11月01日
+								span.guide プレスリリース 
+							a(href="#") 特産品ポータルサイト「ふるさと本舗」、10月度の新しい自治体情報を掲載
+						li 
+							.leftbox
+								span.date 2022年11月01日
+								span.guide プレスリリース 
+							a(href="#") CCI、大丸松坂屋百貨店と提携してTikTokクリエイターによる運用コンサルティングサービス「お菓子食べすぎ会社員　TikTokコンサルサービス」を提供開始
+				a(href="#").btn-container 一覧を見る
+
+		//- 会社情報
+		.company-container
+			section.companyinfo
+				h2.tittle-container Company
+					span.small 会社情報
+				.infomenu
+					span.linkbox
+						a(href="#")
+							img(src="/common/img/company_icon01_pc.png", alt="代表メッセージ") 
+							span.linktext 代表メッセージ
+					span.linkbox
+						a(href="#")
+							img(src="/common/img/company_icon02_pc.png", alt="会社概要") 
+							span.linktext 会社概要
+					span.linkbox
+						a(href="#")
+							img(src="/common/img/company_icon03_pc.png", alt="事業スキーム")
+							span.linktext 事業スキーム
+					span.linkbox
+						a(href="#")
+							img(src="/common/img/company_icon04_pc.png", alt="沿革") 
+							span.linktext 沿革
+
+				//- ul.infomenu
+				//- 	li 
+				//- 		a(href="#").image
+				//- 			img(src="/common/img/company_icon01_pc.png", alt="代表メッセージ") 
+				//- 		a(href="#").linktext 代表メッセージ
+				//- 	li 
+				//- 		a(href="#").image
+				//- 			img(src="/common/img/company_icon02_pc.png", alt="会社概要") 
+				//- 		a(href="#").linktext 会社概要
+				//- 	li
+				//- 		a(href="#").image
+				//- 			img(src="/common/img/company_icon03_pc.png", alt="事業スキーム") 
+				//- 		a(href="#").linktext 事業スキーム
+				//- 	li
+				//- 		a(href="#").image
+				//- 			img(src="/common/img/company_icon04_pc.png", alt="沿革") 
+				//- 		a(href="#").linktext 沿革
+				a(href="#").btn-container 会社情報#[span.large Top] 
+
+		//- IRニュース
+		section.irnews-container
+			h2.tittle-container IR News
+				span.small IRニュース
+			ul.updatenews
+				li 
+					.leftbox
+						span.date 2022年10月21日
+						span.guide 適時開示
+					a(href="#") 自己株式の取得及び取得終了に関するお知らせ（82KB）
+				li 
+					.leftbox
+						span.date 2022年10月03日
+						span.guide 適時開示
+					a(href="#") 自己株式の取得状況に関するお知らせ（82KB）
+				li 
+					.leftbox
+						span.date 2022年09月01日
+						span.guide 適時開示
+					a(href="#") 自己株式の取得状況に関するお知らせ（82KB）
+				li 
+					.leftbox
+						span.date 2022年08月15日
+						span.guide.-yellow お知らせ
+					a(href="#") 2022年12月期 第2四半期決算説明資料（スクリプトつき）（4,262KB）
+				li 
+					.leftbox
+						span.date 2022年08月12日
+						span.guide.-yellow お知らせ
+					a(href="#") 2022年12月期 第2四半期 決算説明会動画
+			a(href="#").btn-container 一覧を見る
+
+		//- IR情報
+		.irinfo-container
+			section.irinfo
+				h2.tittle-container IR 
+					span.small IR情報
+				.menulist
+					ul.menu
+						li 
+							a(href="#") 経営方針
+						li 
+							a(href="#") 業績・財務
+						li 
+							a(href="#") IR資料
+						li 
+							a(href="#") 株式情報・その他
+				a(href="#").btn-container IR情報#[span.large Top]
+
+		//- お問い合わせ
+		.contact-container
+			a(href="#") Contact#[span.small お問い合わせはこちら]

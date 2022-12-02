@@ -68,9 +68,9 @@ JSライブラリ用
 Components
 =========================================================*/
 // サイトのヘッダ
-// @import "components/site-header.scss";
+@import "components/site-header.scss";
 // サイトのフッタ
-// @import "components/site-footer.scss";
+@import "components/site-footer.scss";
 
 /*
 これ以降からHelpersの上部の間に読み込みたいコンポーネントを追加
@@ -87,11 +87,25 @@ Components
 共通パーツ
 
 #########################################################*/
-
-
+//- ボタン
+@import "components/btn-container.scss";
+//- タイトル
+@import "components/_tittle-container.scss";
 
 /*#########################################################
 
 基本レイアウト
 
 #########################################################*/
+//- メインビジュアル
+@import "components/main-container.scss";
+//- ニュース
+@import "components/topic-news.scss";
+//- 会社情報
+@import "components/company-container.scss";
+//- IRニュース
+@import "components/irnews-container.scss";
+//- IR情報
+@import "components/irinfo-container.scss";
+//- お問い合わせ
+@import "components/contact-container.scss";

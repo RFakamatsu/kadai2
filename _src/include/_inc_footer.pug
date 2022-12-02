@@ -3,10 +3,46 @@
 	ファイル概要：コピーライトなどのフッタ用ファイル
 
 	#########################################################
+.site-footer
+	footer.footerbox
 
-footer.site-footer
-	p
-		small !{copyright}
+		//- snsアイコン
+		ul.snslink
+			li 
+				a(href="#") 
+					img(src="/common/img/ico_facebook.svg", alt="facebook")
+			li 
+				a(href="#") 
+					img(src="/common/img/ico_twitter.svg", alt="twitter")
+			li 
+				a(href="#") 
+					img(src="/common/img/ico_instagram.svg", alt="instagram")
+		
+		//- フッターメニュー
+		ul.navmenu
+			li 
+				a(href="#") #[span.large Top]
+			li 
+				a(href="#") 会社情報
+			li 
+				a(href="#") ニュース
+			li 
+				a(href="#") IR情報
+			li 
+				a(href="#") 採用情報
+			li  
+				a(href="#") お問い合わせ
+			li 
+				a(href="#") サイトマップ
+			li 
+				a(href="#") プライバシーポリシー
+		
+		//- コピーライト・ロゴ
+		.footerbottom
+			p.copyright
+				small !{copyright}
+			a(href="#").logo
+				img(src="/common/img/logo_carta-white.svg", alt="ロゴ") 
 
 //- JSファイルの読み込み
 script(src=js_path+"/"+jsfile)

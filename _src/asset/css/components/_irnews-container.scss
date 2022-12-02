@@ -1,0 +1,145 @@
+/* ========================================================
+	IRニュース
+=========================================================*/
+.irnews-container{
+	width: $w-content;
+	margin: 0 auto;
+	padding: 65px 15px 60px;
+	font-family: $font-family;
+
+	@include mq(sm){
+		width: 92%;
+		padding: 44px 0 40px;
+	}
+
+	/* ========================================================
+	ニュースコンテンツ
+	=========================================================*/
+	.updatenews{
+		margin-bottom: 32px;
+
+		li{
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			line-height: 1;
+			border-bottom: solid 1px #000;
+
+			&:first-child{
+
+				@include mq(sm){
+					border-top: solid 1px #000;
+					padding-top: 18px;
+				}
+			}
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			@include mq(sm){
+				flex-direction: column;
+				align-items: normal;
+				margin-bottom: 18px;
+				padding-bottom: 18px;
+			}
+
+			.leftbox{
+				width: 252px;
+				flex-shrink: 0;
+	
+				@include mq(sm){
+						margin-bottom: 13px;
+					}
+	
+				.date{
+					display: inline-block;
+					font-size: 1.4rem;
+				}
+	
+				.guide{
+					display: inline-block;
+					margin: 0 20px;
+					padding: 5px 30px;
+					background-color: #2786ad;
+					font-size: 1rem;
+					color: #fff;
+
+					&.-yellow{
+							background-color: #dec14e;
+					}
+				}
+			}
+
+			a{
+				display: block;
+				font-size: 1.4rem;
+				line-height: 1.5;
+				text-decoration: none;
+
+				@include mq(sm){
+					width: 100%;
+				}
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+// 	.updatenews{
+// 		margin-bottom: 32px;
+// 		padding: 0;
+// 		list-style: none;
+		
+// 		li{
+// 			margin-bottom: $mg * 2;
+// 			padding-bottom: 20px;
+// 			line-height: 1;
+// 			border-bottom: solid 1px #000;
+
+// 			@include mq(sm){
+// 				&:first-child{
+// 					padding-top: 20px;
+// 					border-top: solid 1px #000;
+// 				}
+// 			}
+
+// 			&:last-child{
+// 				margin-bottom: 0;
+// 			}
+
+// 			a{
+// 				text-decoration: none;
+// 				font-size: 1.4rem;
+
+// 				.guide{
+// 					display: inline-block;
+// 					margin: 0 20px;
+// 					padding: 5px 30px;
+// 					background-color: #2786ad;
+// 					font-size: 1rem;
+// 					color: #fff;
+
+// 					&.-yellow{
+// 						background-color: #dec14e;
+// 					}
+// 				}
+
+// 				.line{
+
+// 						@include mq(sm){
+// 							display: block;
+// 							padding-top: 15px;
+// 							line-height: 1.5;
+// 						}
+
+// 					&:hover{
+// 						text-decoration: underline;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+}

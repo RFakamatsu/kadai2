@@ -4,15 +4,30 @@
 
 	#########################################################
 
-//- ロゴのアンカーと画像設定
-mixin logo
-	a(href=domain)
-		//- img(src=image_path+"" alt=site_name)
-
 header.site-header
-	if id=='index'
-		h1.sitelogo
-			+logo
-	else
-		p.sitelogo
-			+logo
+	nav.grovalnav
+		h1.logo 
+			a(href="#")
+				img(src="/common/img/logo_carta-black.svg", alt="CRASTA") 
+		.info
+			ul
+				li 
+					a(href="#") 会社情報
+				li 
+					a(href="#") ニュース
+				li 
+					a(href="#") IR情報
+				li 
+					a(href="#") 採用情報
+				li 
+					a(href="#") お問い合わせ
+			ul.lang
+				li.jp
+					a(href="#") JP
+				li 
+					a(href="#") EN
+
+		.hamburger-menu
+			span.hamburger-bar 
+			span.hamburger-bar
+			span.hamburger-bar

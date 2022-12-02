@@ -1,0 +1,101 @@
+/* ========================================================
+IR情報
+=========================================================*/
+.irinfo-container{
+	background-color: #f8f8f8;
+	font-family: $font-family;
+
+	.irinfo{
+		width: 980px;
+		margin: 0 auto $mg * 4 auto;
+		padding: 65px 0 60px;
+
+		@include mq(sm){
+			width: 92%;
+			padding: 45px 0 40px;
+			margin-bottom: 0;
+		}
+		
+		/* ========================================================
+		検索メニュー
+		=========================================================*/
+		.menulist{
+			display: flex;
+			
+			@include mq(sm){
+				flex-direction: column;
+			}
+	
+			.menu{
+				display: flex;
+    			flex-wrap: wrap;
+				margin-bottom: 32px;
+				padding: 0;
+				list-style: none;
+
+				@include mq(sm){
+					flex-direction: column;
+				}
+				
+				li{
+					width: 460px;
+					line-height: 4;
+					border-top: solid 1px #000;
+					background-image: url(../img/arrow.svg);
+					background-position: right 30px bottom 30px;
+					background-size: 10px;
+
+					@include mq(sm){
+						width: 90%;
+						margin: 0 auto;
+						background-position: right 15px bottom 25px;
+						background-size: 6px;
+					}
+	
+					&:first-child{
+						margin-right: 60px;
+
+						@include mq(sm){
+							margin-right: auto;
+						}
+					}
+
+					&:last-child{
+						border-bottom: solid 1px #000;
+					}
+
+					&:nth-child(3){
+						border-bottom: solid 1px #000;
+						margin-right: 60px;
+						
+						@include mq(sm){
+							margin-right: auto;
+							border-bottom: none;
+						}
+					}
+		
+					a{
+						display: block;
+						padding-left: 20px;
+						text-decoration: none;
+						font-size: 1.8rem;
+
+						@include mq(sm){
+							font-size: 1.4rem;
+						}
+					}
+
+					&:hover{
+						transition: background-color 0.3s ease;
+						background-color: #666;
+						background-image: url(../img/arrow_w.svg);
+
+						a{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,35 @@
+.main-container{
+	.btn-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 300px;
+		margin: 0 auto;
+		height: 47px;
+		background-color: #000;
+		text-decoration: none;
+		color: #fff;
+		background-image: url(../img/arrow_w.svg);
+		background-position: right 15px bottom 19px;
+		background-size: 10px;
+		font-size: 1.5rem;
+
+		@include mq(sm){
+			width: 225px;
+			font-size: 1.4rem;
+		}
+
+		.large{
+			text-transform: uppercase;
+		}
+
+		&:hover{
+			transition: background-color 0.3s ease;
+			background-color: #fff;
+			border: solid 1px #000;
+			color: #000;
+			background-image: url(../img/arrow.svg);	
+			background-position: right 14px bottom 18px;
+		}
+	}
+}
